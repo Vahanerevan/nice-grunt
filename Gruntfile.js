@@ -101,17 +101,7 @@ module.exports = function(grunt) {
 
 
         browserSync: {
-            bsFiles: {
-                src: 'gjs/modules/**/*.js'
-            },
-            options: {
-                server: {
-                    baseDir: "./"
-                }
-            }
-        }
-
-
+ 
 
 
     });
