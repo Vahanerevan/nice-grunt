@@ -18,35 +18,7 @@ module.exports = function(grunt) {
 
             dist: {
                 src: [
-                    'js/lib/jquery.min.js',
-                    'js/lib/jquery.cookie.js',
-                    'js/lib/jquery.placeholder.js',
-                    'js/lib/moment-with-locales.min.js',
-                    'js/lib/moment-range.min.js',
-                    'js/lib/underscore-min.js',
-                    'js/lib/angular.min.js',
-                    'js/lib/angular-animate.min.js',
-                    'js/lib/fastclick.js',
-                    'js/lib/angular-ui-router.js',
-                    'js/lib/angular-touch.min.js',
-                    'js/lib/mm-foundation.min.js',
-                    'js/lib/modernizr.js',
-                    'js/lib/amplify.min.js',
-                    'js/lib/easeljs-0.7.1.combined.js',
-                    'js/lib/tweenjs-0.5.1.min.js',
-                    'js/lib/flashplugin-0.5.2.combined.js',
-                    'js/modules/core/core.js',
-                    'js/modules/navigation/navigation.js',
-                    'js/modules/profile/profile.js',
-                    'js/modules/betting/betting.js',
-                    'js/modules/interactive/interactive.js',
-                    'js/modules/components/components.js',
-                    'js/modules/cms/cms.js',
-                    'js/modules/**/*.js',
-                    'js/modules/**/**/*.js',
-                    'js/main.js',
-                    'js/routes.js',
-                    'js/config.js',
+           
                 ],
                 dest: 'js/app.js'
             }
@@ -55,13 +27,6 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: [
-                    'Gruntfile.js',
-                    'js/modules/**/*.coffee',
-                    // 'js/modules/**/*.js',
-                    'js/main.js',
-                    'js/routes.coffee',
-                    'haml/**/*.haml',
-                    'index.haml'
                 ],
                 tasks: ['concurrent:buildjs', 'concurrent:buildhaml', 'concat', 'play:success', 'uglify'],
                 options: {
@@ -166,12 +131,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['watch']);
 
 };
-//
-//
-
-
-// {
-//                     'html/betting.html': 'haml/betting.haml',
-//                     'html/navigation/nav.html': 'haml/navigation/nav.haml'
-//                    } 
+ 
 /* EOF */
